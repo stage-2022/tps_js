@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            .tabs a,body{
+                background-color:#EEE
+            }
+            .tabs a,.tabs-content{
+                box-shadow:0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)
+            }
+            body{
+                font-family:sans-serif;
+                padding:50px
+            }
+            a{text-decoration:none;
+                color:inherit
+            }
+            .tabs li,ul.tabs{
+                margin:0;
+                padding:0;
+                list-style:none
+            }
+            .tabs li{
+                float:left;
+                display:block
+            }
+            .tabs:after{
+                display:table;
+                content:' ';
+                clear:both
+            }
+            .tabs a{
+                display:inline-block;
+                padding:10px 15px
+            }
+            .tabs .active a,.tabs-content{
+                background-color:#fff
+            }
+            .tabs-content{
+                position:relative;
+                z-index:3;
+                padding:20px;
+                margin-bottom:20px
+            }
+            .tab-content{display:none}
+            .tab-content.active{display:block}
+            .fade{
+                opacity:0;
+                transition:opacity .3s
+            }
+            .fade.in{opacity:1}
+        </style>
+    </head>
+    <body>
+        <div>
+            <ul class="tabs">
+                <li class="active"><a href="#home">Accueil</a></li>
+                <li><a href="#mentions">Mentions</a></li>
+                <li><a href="#about">A propos</a></li>
+            </ul>
+            <div class="tabs-content">
+                <div class="tab-content active" id="home">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, tenetur ex hic ipsam earum enim repudiandae, veritatis atque, eos molestias quidem a, dolores! Iusto quo inventore, suscipit, soluta harum vel.</div>
+                <div class="tab-content" id="mentions"> consectetur adipisicing elit. Eius, tenetur ex hic ipsam earum enim repudiandae, veritatis atque, eos molestias quidem a, dolores! Iusto quo inventore, suscipit, soluta harum vel.</div>
+                <div class="tab-content" id="about">Eius, tenetur ex hic ipsam earum enim repudiandae, veritatis atque, eos molestias quidem a, dolores! Iusto quo inventore, suscipit, soluta harum vel.</div>
+            </div>
+        </div>
+        
+        
+        <div>
+            <ul class="tabs">
+                <li class="active"><a href="#home2">Accueil</a></li>
+                <li><a href="#mentions2">Mentions</a></li>
+                <li><a href="#about2">A propos</a></li>
+            </ul>
+            <div class="tabs-content">
+                <div class="tab-content active" id="home2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, tenetur ex hic ipsam earum enim repudiandae, veritatis atque, eos molestias quidem a, dolores! Iusto quo inventore, suscipit, soluta harum vel.</div>
+                <div class="tab-content" id="mentions2"> consectetur adipisicing elit. Eius, tenetur ex hic ipsam earum enim repudiandae, veritatis atque, eos molestias quidem a, dolores! Iusto quo inventore, suscipit, soluta harum vel.</div>
+                <div class="tab-content" id="about2">Eius, tenetur ex hic ipsam earum enim repudiandae, veritatis atque, eos molestias quidem a, dolores! Iusto quo inventore, suscipit, soluta harum vel.</div>
+            </div>
+        </div>
+        
+        <script src="tabs.js"></script>
+    </body>
+</html>
